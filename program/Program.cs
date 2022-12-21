@@ -9,8 +9,6 @@ int LengthArray(string [] stringArray){
     return count;
 }
 
-string [] stringNewArray = new string[LengthArray(stringArray)];
-
 void FillArray(string [] stringNewArray, string [] stringArray){
     int j = 0;
     for (int i = 0; i < stringArray.Length; i++){
@@ -29,5 +27,6 @@ void Printarray(string [] array){
         Console.WriteLine("\b\b ]");
 }
 
+string [] stringNewArray = new string[LengthArray(stringArray)];
 FillArray(stringNewArray, stringArray);
 Printarray(stringNewArray);
